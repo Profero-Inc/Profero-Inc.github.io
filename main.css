@@ -1,0 +1,339 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tab {
+  background-color: #00cc99;
+  padding: 0.5rem 0.5rem;
+  padding-bottom: 1%;
+  color: #ffffff;
+  width: 100%;
+  height: auto;
+}
+
+footer .tab th, footer .tab td {
+  padding: 0.2rem;
+  text-align: center;
+  width: 33%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.navbar {
+  background-color: #00cc99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+.navl{
+  border-radius: 90px;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+}
+
+.navl:hover{
+  background-color: white;
+  transition: all 1s;
+  color: #00cc99;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: none;
+  color: #00cc99;
+  font-weight: bold;
+  transition: all 1s;
+}
+
+/* Recommended Section */
+.recommended-section {
+  padding: 2rem;
+  color: #333;
+}
+
+.recommended-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Song Grid */
+.song-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+  background-color: #e7e7e7;
+  border-radius: 1%;
+}
+
+/* Genre Grid */
+.genre-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.song-card {
+  /* background-color: white; */
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px white; */
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 525px;
+  text-wrap: auto;
+}
+
+.genre-card {
+  border-radius: 999px;
+  /* box-shadow: 0 4px 8px rgb(160, 160, 160); */
+  padding: 7rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 725px;
+  min-width: 200px;
+  max-height: 200px;
+  font-size: 250%;
+}
+
+.link {
+  color: inherit;
+  transition: all 500ms;
+  text-decoration: none;
+}
+
+/* Genres */
+
+
+.pop-card {
+  color: white;
+  background-image: linear-gradient(to bottom right, #ff149d, #a222d5);
+}
+
+.rock-card {
+  color: white;
+  background-image: linear-gradient(to bottom right, #f50000, rgb(54, 0, 0));
+}
+
+.arabic-card {
+  color: white;
+  background-image: linear-gradient(to bottom right, #00ff00, #021800);
+}
+
+.indie-card {
+  color: white;
+  background-image: linear-gradient(to bottom right, #00c2aa, #5339e9);
+}
+
+.metal-card {
+  color: white;
+  background-image: linear-gradient(to bottom right, black, #7e959a);
+}
+
+.kpop-card {
+  color: white;
+  background-image: linear-gradient(to bottom right, #b389f7, #ed98cb);
+}
+
+.genre-card:hover {
+  opacity: 70%;
+  transition: all 500ms;
+  width: 75%;
+}
+
+.song-card:hover {
+  background-color: #00cc99;
+  color: white;
+  transition: background-color 500ms;
+}
+
+.song-grid:hover {
+  color: white;
+  transition: color 1s;
+}
+
+.song-card img {
+  width: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.song-card img:hover {
+  width: 90%;
+  border-radius: 5%;
+  transition: width 1s, border-radius 1s;
+}
+
+.song-card h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.song-card h3:hover {
+  color: white;
+  transition: color 1s;
+}
+
+.song-card .author {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.song-card .author:hover {
+  color: white;
+  transition: color 1s;
+}
+
+.show-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more {
+  display: flex;
+  border-radius: 50px;
+  background-color: #e7e7e7;
+  width: 20%;
+  height: 10%;
+  border-color: #00cc99;
+  border-style: solid;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.more:hover {
+  display: flex;
+  border-radius: 50px;
+  background-color: #00cc99;
+  width: 20%;
+  height: 10%;
+  border-color: #00cc99;
+  border-style: double;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  transition: all 1s;
+}
+
+
+.link:hover {
+  color: #c7cfda;
+  transition: all 500ms;
+}
+.frame{
+  border-radius:12px;
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: 100%;
+}
+.frame:hover{
+  border-radius:2px;
+  transition: all 1s;
+}
+
+.spotify-card {
+  /* background-color: white; */
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px white; */
+  padding: 0rem;
+  text-align: center;
+  width: 100%;
+  max-width: 525px;
+}
+
+.about{
+object-fit: cover;
+}
+
+.flex {
+  display: flex;
+}
+
+.services-list {
+  background-color: white;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px white; */
+  padding: 1rem;
+  /* text-align: center; */
+  width: 100%;
+  max-width: 700px;
+  margin: 1rem;
+}
+
+.services-list:last-child {
+  margin-bottom: 0;
+}
+
+.services-list:hover {
+  background-color: #00cc99;
+  color: white;
+  transition: all 500ms;
+}
+
+h2.about {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+h3.about {
+  font-size: 2rem;
+}
+
+section.about {
+  padding: 2rem;
+  color: #333;
+}
+
+div.about {
+  padding-top: 1rem;
+}
+
+p.about {
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+}
